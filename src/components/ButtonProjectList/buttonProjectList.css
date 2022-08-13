@@ -1,0 +1,17 @@
+.project__button--header {
+	background-color: #FFFFFF;
+	border: 1px solid #a2a0a2;
+	font-size: 13px;
+	color: #1e1f21;
+	width: 90px;
+	height: 30px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    text-transform: capitalize;
+}
+
+.project__button--header:hover {
+	background-color: #F9F8F8;
+}

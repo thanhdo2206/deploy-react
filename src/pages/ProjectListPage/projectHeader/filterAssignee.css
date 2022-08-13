@@ -1,0 +1,53 @@
+.FilterAssignee__box--showContainer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+	border: 1px solid #676767;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+.FilterAssignee__box--showContainer:hover {
+	background-color: #f9f8f8;
+}
+
+#showContainer1 {
+	padding: 5px 13px;
+}
+
+#showContainer2 {
+	padding: 8px 13px;
+}
+
+.FilterAssignee__box--showContainer .css-rbzy5p-MuiAvatar-root {
+	color: #4e4b4b;
+	font-size: 11px !important;
+	width: 22px !important;
+	height: 22px !important;
+}
+
+.FilterAssignee__box--show {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.FilterAssignee__typo--show {
+	font-size: 13px !important;
+	margin-left: 7px !important;
+}
+
+.FilterAssignee__icon--show {
+	font-size: 15px !important;
+	color: #716c6c;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+.FilterAssignee__icon--show:hover {
+	color: #4e4b4b;
+}

@@ -1,0 +1,32 @@
+.workspace--header {
+    border-bottom: 1px solid #424244;
+    margin-bottom: 20px;
+
+}
+
+.workspace__title--header {
+    text-transform: capitalize;
+    font-size: 17px !important;
+    margin-bottom: 10px !important;
+    font-weight: bold !important;
+}
+
+.workspace__button--close {
+    position: absolute !important;
+    top: 18px;
+    right: 18px;
+}
+
+.workspace__button--close:hover .workspace__icon--close{
+    color: #0e0e0e !important; 
+}
+
+.workspace__icon--close {
+    font-size: 15px !important;
+    color: #7B7C7C !important;
+    font-weight: bold !important;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    min-width: 0 !important;
+}

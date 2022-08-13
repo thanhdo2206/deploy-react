@@ -1,0 +1,138 @@
+.title__content {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-color: #fff;
+	/* margin-left: 10px !important; */
+}
+
+/* .title__container:hover .title__icon--hover {
+	display: block !important;
+} */
+
+#title__icon--hover {
+	/* position: absolute; */
+	/* left: -20px; */
+	z-index: 1;
+	width: 30px;
+	border-radius: 0;
+	border: none;
+	cursor: grab;
+	/* display: none !important; */
+}
+
+#addTask__span--hover {
+	position: absolute;
+	top: -2px;
+	left: 45px;
+	font-size: 12px;
+	color: #6a696a;
+	width: 60px;
+	display: none;
+	z-index: 1;
+}
+
+#title__button--addTask {
+	width: 30px;
+	border-radius: 0;
+	border: none;
+}
+
+#title__button--addTask:hover + #addTask__span--hover {
+	display: block;
+}
+
+#title_button--expand {
+	width: 30px;
+	border-radius: 0;
+	border: none;
+}
+
+.Box__input--addTask .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.Box__input--addTask .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+	border-color: white;
+}
+
+.Box__input--addTask input {
+	padding: 10px;
+}
+
+.drop-preview {
+	background-color: rgba(150, 150, 200, 0.1);
+	border: 1px dashed #abc;
+	margin: 5px;
+}
+
+#title__button--showMore {
+	width: 30px;
+	border-radius: 0;
+	border: none;
+}
+
+.dropMenu--Section {
+	position: absolute;
+	top: 30px;
+	right: -100px;
+	z-index: 1;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropMenu--Section:focus {
+	display: block;
+}
+
+#dropItem__button--addSection {
+	width: 125px;
+	justify-content: space-around;
+	border: none;
+	border-radius: 5px 5px 0 0;
+}
+
+#dropItem__button--addSection:hover + .drop__block--addSection {
+	display: block;
+}
+
+#dropItem__button--delSection {
+	width: 125px;
+	justify-content: space-around;
+	border: none;
+	border-radius: 0 0 5px 5px;
+	color: #F90B0B;
+}
+#dropItem__button--delSection:hover {
+	color: #da143f;
+}
+
+.drop__block--addSection {
+	position: absolute;
+	top: -1px;
+	left: 126px;
+	display: none;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.drop__block--addSection:hover {
+	display: block;
+}
+
+#dropItem__button--addSectionAbove {
+	width: 150px;
+	justify-content: space-around;
+	border: none;
+	border-radius: 5px 5px 0 0;
+}
+
+#dropItem__button--addSectionBelow {
+	width: 150px;
+	justify-content: space-around;
+	border: none;
+	border-radius: 0 0 5px 5px;
+}

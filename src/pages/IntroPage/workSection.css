@@ -1,0 +1,52 @@
+.work__title {
+	font-size: 45px;
+	margin: 0px;
+	line-height: 45px;
+}
+#work__title--bottom {
+	margin-bottom: 150px;
+}
+.work__content {
+	font-size: 20px;
+	width: 370px;
+	line-height: 30px;
+	margin-bottom: 30px;
+	font-family: 'League Spartan', sans-serif;
+	font-weight: 200;
+}
+
+.work__img--item {
+	width: 360px;
+}
+
+.work__img--item img {
+	width: 100%;
+}
+
+#work__img--item1 {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	z-index: -1;
+}
+
+#work__img--item2 {
+	position: absolute;
+	top: 90px;
+	right: -30px;
+	z-index: -2;
+}
+.work__checkbox {
+	border-radius: 10px;
+	width: 205px;
+	height: 40px;
+	position: absolute;
+	top: 20px;
+	left: 126px;
+	background-color: #fff;
+}
+
+.work__checkbox span {
+	line-height: 10px;
+	font-size: 14px;
+}

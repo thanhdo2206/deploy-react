@@ -1,0 +1,31 @@
+.container{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+.container__verify{
+    background-color: #f9f8f8;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.text__verify{
+    font-size:80px;
+    font-weight: 100;
+}
+
+.text__google{
+    text-align:center;
+    font-size:28px;
+    margin-top: 20px;
+    color: #6e6e6e;
+    
+}

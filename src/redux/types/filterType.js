@@ -1,0 +1,6 @@
+export const FILTER_BY_ASSIGNEE = 'filter/assignee'
+export const FILTER_BY_DUE_DATE = 'filter/dueDate'
+export const FILTER_BY_CREATED_BY = 'filter/createdBy'
+export const FILTER_BY_PRIORITY = 'filter/priority'
+export const FILTER_RESET = 'filter/reset'
+export const FILTER_BY_STATUS ='filter/status'

@@ -1,0 +1,21 @@
+.workspace__input--members {
+	margin-top: 20px !important;
+}
+
+.chip__input > div {
+	height: 100px !important;
+	max-height: 150px;
+	overflow: auto;
+}
+
+.chip__input .MuiInputBase-root {
+	align-items: flex-start !important;
+}
+
+.chip__input .MuiOutlinedInput-adornedStart {
+	padding-top: 10px !important;
+}
+
+.chip__input .MuiOutlinedInput-inputAdornedStart {
+	font-size: 14px !important;
+}

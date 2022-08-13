@@ -1,0 +1,67 @@
+#addTask__button {
+	border-radius: 5px 0 0 5px;
+}
+
+#addTask_button-dropdown {
+    width: 20px;
+	border-radius: 0 5px 5px 0;
+}
+
+
+#filterTask__button--show {
+	border-radius: 5px;
+    border: none;
+    width: 130px !important;
+}
+
+#filterTask__button--show span {
+	margin-left: 5px;
+}
+#filterTask__block {
+    width: 200px;
+    border: 1px solid #a2a0a2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    left: 0;
+}
+
+#filterTask__button {
+    width: 100%;
+    border: none;
+	justify-content: start;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#filterTask__button--allTask {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    border: none;
+	justify-content: start;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#filterTask__button--completedTask {
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    border: none;
+	justify-content: start;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#customize__button {
+	border-radius: 5px;
+}
+
+#addSection__button {
+	width: 150px;
+	border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+}
+
+.customize__form .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    top: 126px !important;
+}

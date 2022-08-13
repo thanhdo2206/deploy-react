@@ -1,0 +1,63 @@
+.css-6hp17o-MuiList-root-MuiMenu-list {
+	padding: 0 !important;
+}
+
+
+.css-1uwgr7b-MuiTypography-root {
+	font-size: 14px !important;
+}
+
+/* width */
+.avatar__list--workspace::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+.avatar__list--workspace::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+.avatar__list--workspace::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+.avatar__list--workspace::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/*list item*/
+.avatar__menu {
+	width: 270px;
+	background-color: #fff;
+	color: #39393B;
+}
+
+.avatar__list--workspace {
+	max-height: 140px;
+	overflow: auto;
+}
+
+.list__item--workspace .css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+	padding: 6px 16px !important;
+}
+
+.list__button {
+	margin: 0 !important;
+}
+
+.list__link {
+	text-decoration: none;
+	font-size: 16px !important;
+	color: #39393B;
+	width: 100%;
+}
+
+.item__typography--createwsp {
+	font-size: 14px !important;
+}
+
+.item__typography--logout {
+	font-size: 14px !important;
+}

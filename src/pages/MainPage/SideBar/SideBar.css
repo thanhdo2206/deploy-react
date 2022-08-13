@@ -1,0 +1,69 @@
+.listItem__project {
+	background-color: rgba(255, 255, 255, 0.16);
+}
+
+.listItem__project > .nav__link--sidebar.active {
+	background-color: transparent;
+}
+
+.nav__link--sidebar:hover {
+	background-color: rgba(255, 255, 255, 0.08);
+}
+
+.nav__link--sidebar.active {
+	background-color: rgba(255, 255, 255, 0.16);
+}
+
+.sideBar__avatar--menu {
+	margin-bottom: 6px;
+}
+
+.sideBar__avatar--show {
+	position: relative;
+	overflow: visible !important;
+	cursor: pointer;
+}
+
+.sideBar__avatar--show:hover .sideBar__avatar--hoverEmail {
+	display: block;
+}
+
+.sideBar__avatar--hoverEmail {
+	position: absolute;
+	top: 25px;
+	right: -129px;
+	color: #fff;
+	display: none;
+}
+
+.css-1ytufz-MuiAvatarGroup-root .MuiAvatar-root {
+	width: 25px !important;
+	height: 25px !important;
+	font-size: 14px;
+	border: none !important;
+}
+
+.label__projectName {
+	font-size: 14px;
+	color: #6d6e6f;
+}
+
+.input__projectName {
+	width: 98%;
+	padding: 6px 0px 6px 12px;
+
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 1px solid #cbcbcb;
+	font-size: 16px;
+	color: #1e1f21;
+}
+
+.input__projectName:hover {
+	border: 1px solid #6d6e6f;
+}
+
+.input__projectName:focus {
+	outline: 2px solid #2f4edacc;
+	border: 1px solid #6d6e6f;
+}

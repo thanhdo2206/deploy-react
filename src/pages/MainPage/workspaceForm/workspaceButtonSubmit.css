@@ -1,0 +1,24 @@
+.workspace__block--submit {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #424244;
+    margin-top: 20px;
+}
+
+.workspace__button--submit {
+    width: 24%;
+    position: absolute !important;
+    bottom: 4px;
+    right: 20px;
+    background-color: #726ab9 !important;
+    text-transform: capitalize !important;
+    color: white !important;
+    border: none;
+    padding: 10px 0;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.workspace__button--submit:hover {
+    background-color: #464075 !important;
+}
