@@ -2,11 +2,13 @@ import {
 	addSectionService,
 	archiveSectionService,
 	getAllSectionService,
+	UnarchiveSectionService,
 	updateTitleSectionService,
 } from '../../services/sectionService';
 
 import { GET_ALL_SECTION_API } from '../types/SectionTypes';
 import { getProjectApi, updateDropSectionApi } from './ProjectAction';
+import { getAllTaskInProjectApi } from './TaskAction';
 
 export const getAllSectionApi = projectId => {
 	return async dispatch => {
@@ -63,6 +65,15 @@ export const addSectionLeftRightApi = (
 export const archiveSectionApi = sectionId => {
 	return async dispatch => {
 		const { data } = await archiveSectionService(sectionId);
-		dispatch(getAllSectionApi(data.projectId));
+		await dispatch(getAllSectionApi(data.projectId));
+		dispatch(getAllTaskInProjectApi(data.projectId));
+	};
+};
+
+export const unArchiveSectionApi = sectionId => {
+	return async dispatch => {
+		const { data } = await UnarchiveSectionService(sectionId);
+		await dispatch(getAllSectionApi(data.projectId));
+		dispatch(getAllTaskInProjectApi(data.projectId));
 	};
 };

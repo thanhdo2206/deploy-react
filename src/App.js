@@ -14,6 +14,7 @@ import BoardView from './pages/ProjectBoardView/BoardView';
 import './assets/css/resetCss.css';
 import Progress from './components/ProgressTest/Progress.js';
 import ProjectListPage from './pages/ProjectListPage/ProjectListPage.js';
+import ProjectArchive from './pages/Archive/ProjectArchive.js';
 
 function App() {
 	return (
@@ -28,7 +29,8 @@ function App() {
 					<Route path={URLS.mainPage} element={<MainPage />}>
 						<Route path={URLS.workspace} element={<Home />} />
 						<Route path={URLS.boardView} element={<BoardView />} />
-						<Route path=':projectId/list' element={<ProjectListPage />} />
+						<Route path={URLS.listView} element={<ProjectListPage />} />
+						<Route path=':projectId/listArchive' element={<ProjectArchive />} />
 					</Route>
 					<Route path={URLS.newProject} element={<BlankProject />} />
 

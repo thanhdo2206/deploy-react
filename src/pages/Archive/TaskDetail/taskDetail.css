@@ -1,0 +1,140 @@
+.taskDetail__box--container {
+    padding: 0 10px;
+}
+
+.taskDetail__typo {
+    font-size: 14px !important;
+}
+
+.taskDetail__box--header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#taskDetail__icon--unChecked {
+    font-size: 14px;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+#taskDetail__icon--unChecked:hover {
+    color: #58A182;
+    background-color: #E0F4EC;
+    border-color: #58A182;
+}
+
+#taskDetail__icon--Checked {
+    font-size: 14px;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    color: #58A182;
+    background-color: #E0F4EC;
+    border-color: #58A182;
+}
+
+.taskDetail__input--taskName .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.taskDetail__input--taskName .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+	border-color: white;
+}
+
+.taskDetail__input--taskName input {
+    padding: 12px 10px 10px 10px ;
+}
+
+.taskDetail__box--body {
+    padding: 0 10px;
+}
+
+.taskDetail__box--content {
+    display: flex;
+    align-items: center;
+}
+
+.taskDetail__box--form {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    padding: 5px 0;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.taskDetail__box--form:hover {
+    background-color: #F9F8F8;
+    cursor: pointer;
+}
+
+.taskDetail__box--formAssignee {
+    padding-left: 15px;
+}
+
+.taskDetail__box--formDueDate {
+    padding-left: 17px;
+}
+
+.taskDetail__box--formCreatedOn {
+    padding-left: 33px;
+    margin-left: 25px;
+}
+
+.taskDetail__box--formPriority {
+    padding: 0;
+    margin-left: 58px;
+}
+.taskDetail__box--dueDate {
+    margin-top: 15px;
+}
+
+.taskDetail__box--noDueDate:hover .taskDetail__icon--dueDate {
+    color: #535252 !important;
+    border-color: #535252;
+}
+
+.taskDetail__box--noDueDate:hover .taskDetail__typo--dueDate {
+    color: #535252 !important;
+}
+
+.taskDetail__icon--dueDate {
+    font-size: 13px !important;
+    padding: 7px !important;
+}
+
+.taskDetail__box--createdOn {
+    margin-top: 15px;
+}
+
+.taskDetail__typo--createdOn {
+    font-size: 14px !important;
+}
+
+.taskDetail__box--description {
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.taskDetail__box--typo {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.taskDetail__box--description {
+    margin-top: 15px;
+}
+
+.taskDetail__box--typo .taskDetail__typo {
+    margin-bottom: 10px;
+}

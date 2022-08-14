@@ -1,0 +1,23 @@
+.cards-drop-preview {
+	background-color: rgba(150, 150, 200, 0.1);
+	border: 1px dashed #abc;
+	margin: 5px 45px 5px 5px;
+}
+
+.opacity-ghost {
+	transition: all 0.18s ease;
+	cursor: ns-resize;
+	background-color: white;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.3);
+	cursor: ns-resize;
+}
+
+.opacity-ghost-drop {
+	opacity: 1;
+	background-color: white;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0);
+}
+
+.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper {
+	overflow: visible;
+}

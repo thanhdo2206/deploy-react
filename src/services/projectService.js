@@ -1,4 +1,5 @@
-import requestApi from '../utils/requestApi';
+import axiosInstance from '../utils/axiosInstance';
+
 
 export const getAllProjectInWorkspaceService = async worksapceId => {
 	const  jsonOwner = localStorage.getItem('auth');
@@ -6,7 +7,7 @@ export const getAllProjectInWorkspaceService = async worksapceId => {
 	const idOwner = Owner._id;
 
 	try {
-		const respone = await requestApi({
+		const respone = await axiosInstance({
 			method: 'get',
 			url: `ps/${worksapceId}/${idOwner}`,
 		});
@@ -19,7 +20,7 @@ export const getAllProjectInWorkspaceService = async worksapceId => {
 
 export const createProjectService = async dataProject => {
 	try {
-		const respone = await requestApi({
+		const respone = await axiosInstance({
 			method: 'post',
 			url: 'ps',
 			data: {
@@ -36,7 +37,7 @@ export const createProjectService = async dataProject => {
 
 export const archiveProjectService = async projectId => {
 	try {
-		const respone = await requestApi({
+		const respone = await axiosInstance({
 			method: 'put',
 			url: `ps/project/${projectId}`,
 		});
@@ -50,7 +51,7 @@ export const archiveProjectService = async projectId => {
 
 export const unArchiveProjectService = async projectId => {
 	try {
-		const respone = await requestApi({
+		const respone = await axiosInstance({
 			method: 'put',
 			url: `ps/project/2/${projectId}`,
 		});
@@ -65,7 +66,7 @@ export const unArchiveProjectService = async projectId => {
 
 export const getProjectService = async projectId => {
 	try {
-		const respone = await requestApi({
+		const respone = await axiosInstance({
 			method: 'get',
 			url: `project/${projectId}`,
 		});
@@ -84,7 +85,7 @@ export const updateDropSectionService = async (newSectionOrder,projectId) => {
 	// console.log('newSectionOrder',newSectionOrder);
 	
 	try {
-		const respone = await requestApi({
+		const respone = await axiosInstance({
 			method: 'put',
 			url: 'ps/project',
 			data: {
@@ -105,7 +106,7 @@ export const updateDropSectionService = async (newSectionOrder,projectId) => {
 
 export const updateTitleProjectService = async dataProject => {
 	try {
-		const respone = await requestApi({
+		const respone = await axiosInstance({
 			method: 'patch',
 			url: 'ps/project/1',
 			data: {

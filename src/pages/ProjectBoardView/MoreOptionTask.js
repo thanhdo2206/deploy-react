@@ -7,11 +7,20 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import CreateOutlinedIcon from '@mui/icons-material/CreateOutlined';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
+import ConfirmModal from '../../components/Modal/ConfirmModal';
+import { MODAL_ACTION_CONFIRM } from '../../constants/constants';
+import { archiveTaskApi } from '../../redux/actions/TaskAction';
+import { useSelector, useDispatch } from 'react-redux';
+
+
+
 
 export default function MoreOptionTask(props) {
-	const { renameTask, toggleDrawer } = props;
+	const { renameTask, toggleDrawer,task } = props;
 	const [anchorEl, setAnchorEl] = React.useState(null);
 	const open = Boolean(anchorEl);
+
+	const dispatch = useDispatch();
 
 	const handleOpenMore = event => {
 		setAnchorEl(event.currentTarget);
@@ -33,8 +42,23 @@ export default function MoreOptionTask(props) {
 
 	}
 
+	const [isShowModalArchive, setShowModalArchive] = useState(false);
+
+	const toggleModalConfirm = () => {
+		handleCloseMore();
+		setShowModalArchive(!isShowModalArchive);
+	};
+
+	const onModalArchiveTask = type => {
+		if (type === MODAL_ACTION_CONFIRM) {
+			dispatch(archiveTaskApi(task));
+		}
+
+		toggleModalConfirm();
+	};
+
 	return (
-		<Box className='btnOption__box' display={open ? 'block' : 'none'}>
+		<Box className='btnOption__box' >
 			<MoreHorizIcon
 				aria-controls={open ? 'menuOption__task' : undefined}
 				aria-haspopup='true'
@@ -66,11 +90,24 @@ export default function MoreOptionTask(props) {
 					View details
 				</MenuItem>
 
-				<MenuItem className='menu__option-item delete__section-task'>
+				<MenuItem className='menu__option-item delete__section-task' onClick={toggleModalConfirm}>
 					<Inventory2OutlinedIcon className='icon__option' />
 					Archive task
 				</MenuItem>
 			</Menu>
+
+			<ConfirmModal
+				show={isShowModalArchive}
+				title='Archive this task'
+				content={
+					<span>
+						Are you sure you want to archive this task <b>{task.taskName}</b>
+						?
+					</span>
+				}
+				onAction={onModalArchiveTask}
+				nameBtnConfirm='Archive task'
+			/>
 		</Box>
 	);
 }

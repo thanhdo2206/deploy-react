@@ -1,9 +1,10 @@
-import requestApi from '../utils/requestApi';
+
+import axiosInstance from '../utils/axiosInstance';
 
 export const createNewWorkspace = async data => {
 	const { workspaceName, memberEmails, Owner } = data;
 	try {
-		const response = await requestApi({
+		const response = await axiosInstance({
 			method: 'post',
 			url: 'ws',
 			data: {
@@ -20,7 +21,7 @@ export const createNewWorkspace = async data => {
 
 export const getAllWorkspaceByUserEmail = async userEmail => {
 	try {
-		const response = await requestApi({
+		const response = await axiosInstance({
 			method: 'get',
 			url: `ws/user/${userEmail}`,
 		});
@@ -32,7 +33,7 @@ export const getAllWorkspaceByUserEmail = async userEmail => {
 
 export const getWorkspaceById = async workspaceId => {
 	try {
-		const response = await requestApi({
+		const response = await axiosInstance({
 			method: 'get',
 			url: `ws/${workspaceId}`,
 		});
@@ -45,7 +46,7 @@ export const getWorkspaceById = async workspaceId => {
 export const addUserToWorkspace = async data => {
 	const { workspaceId, memberEmails } = data;
 	try {
-		const respone = await requestApi({
+		const respone = await axiosInstance({
 			method: 'put',
 			url: `ws/id/${workspaceId}`,
 			data: {

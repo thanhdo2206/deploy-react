@@ -1,0 +1,35 @@
+.filterMenuTitle__button--show {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	cursor: pointer;
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid #676767;
+    border-radius: 5px;
+}
+.filterMenuTitle__button--show:hover {
+	background-color: #f9f8f8;
+}
+.filterMenuTitle__typo--show {
+	font-size: 13px !important;
+	margin-left: 10px !important;
+}
+
+#filterMenuTitle__block {
+    width: 180px !important;
+    padding: 3px 0;
+}
+
+#filterMenuTitle__button--item {
+    width: 100%;
+    border: none;
+    justify-content: flex-start;
+    padding: 0 15px;
+}
+
+#filterMenuTitle__button--item span {
+    font-size: 16px !important;
+    margin-left: 20px;
+}

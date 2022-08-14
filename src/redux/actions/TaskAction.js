@@ -1,4 +1,5 @@
 import {
+	archiveTaskService,
 	assignTaskService,
 	completeTaskService,
 	createTaskService,
@@ -138,3 +139,14 @@ export const updatePriorityTaskApi = taskUpdate => {
 		dispatch(getAllTaskInProjectApi(data.projectId));
 	};
 };
+
+export const archiveTaskApi = task => {
+	return async dispatch => {
+		const result = await archiveTaskService(task);
+
+		dispatch(getAllTaskInProjectApi(result.data.projectId));
+	};
+};
+
+
+

@@ -28,6 +28,15 @@ export default function ProjectToolbar(props) {
 						<span>Board</span>
 					</NavLink>
 				</li>
+
+				<li className='nav-item '>
+					<NavLink
+						className='nav__link-project line'
+						to={`/main-page/${currentProject._id}/listArchive`}
+					>
+						<span>List Archive</span>
+					</NavLink>
+				</li>
 			</ul>
 		</div>
 	);

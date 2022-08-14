@@ -55,7 +55,10 @@ export default function ListTask(props) {
 			? mapOrder(arrTaskInSection, taskOrderInSection.taskOrder, '_id')
 			: [];
 
-	const newTaskList = filterTaskList(listTask, filterSelector);
+	const listTaskUnarchive = listTask && listTask.length ? listTask.filter(task => !task.archivedTask) :[];
+
+
+	const newTaskList = filterTaskList(listTaskUnarchive, filterSelector);
 
 	const handleCreateTask = nameTask => {
 		if (nameTask === '') {

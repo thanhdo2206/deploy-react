@@ -93,7 +93,7 @@ export default function Task(props) {
 						)}
 					</Box>
 
-					<MoreOptionTask renameTask={renameTask} toggleDrawer={toggleDrawer} />
+					<MoreOptionTask renameTask={renameTask} task={task} toggleDrawer={toggleDrawer} />
 				</Box>
 
 				<Box sx={{ display: 'flex', alignItems: 'center' }}>

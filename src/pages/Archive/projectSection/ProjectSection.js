@@ -59,9 +59,9 @@ export const filterTaskList = (taskList, filterSelector) => {
 	let newTaskList = cloneTaskList.length
 		? cloneTaskList.filter(item => item[currentKeyfilterSelector] !== null)
 		: [];
-	// console.log('current value', currentValue[0])
-	// console.log('currentKeyfilterSelector', currentKeyfilterSelector)
-	// console.log('task', newTaskList)
+		// console.log('current value', currentValue[0])
+		// console.log('currentKeyfilterSelector', currentKeyfilterSelector)
+		// console.log('task', newTaskList)
 	switch (currentKeyfilterSelector) {
 		case 'assigneTo':
 			return (newTaskList = currentValue[0]
@@ -71,12 +71,8 @@ export const filterTaskList = (taskList, filterSelector) => {
 				: taskList);
 		case 'createdBy':
 			return (newTaskList = currentValue[0]
-				? newTaskList.filter(item =>
-						item[currentKeyfilterSelector]
-							? item[currentKeyfilterSelector]._id === currentValue[0]
-								? true
-								: false
-							: false
+				? newTaskList.filter(
+						item => item[currentKeyfilterSelector] ? item[currentKeyfilterSelector]._id === currentValue[0] ? true : false :false
 				  )
 				: taskList);
 		case 'priorityValue':
@@ -91,6 +87,7 @@ export const filterTaskList = (taskList, filterSelector) => {
 			return (newTaskList = cloneTaskList);
 	}
 };
+
 
 export default function ProjectSection(props) {
 	const { section, indexSection, tasks, taskOrders, onTaskDrop } = props;
@@ -130,13 +127,7 @@ export default function ProjectSection(props) {
 			? mapOrder(taskInSection, taskOrderInSection, '_id')
 			: [];
 
-	//mảng các task unarchived
-	const listTaskUnarchive =
-		taskList && taskList.length
-			? taskList.filter(task => !task.archivedTask)
-			: [];
-
-	const newTaskList = filterTaskList(listTaskUnarchive, filterSelector);
+	const newTaskList = filterTaskList(taskList, filterSelector);
 	const handleClickExpandButton = () => {
 		setIsExpand(!isExpand);
 	};
@@ -183,7 +174,7 @@ export default function ProjectSection(props) {
 
 		let indexAddSection = indexSection + checkAboveBelow;
 
-		console.log('indexAddSection', indexAddSection);
+		
 		dispatch(addSectionLeftRightApi(newSection, sectionOrder, indexAddSection));
 		setAddSectionAbove(false);
 		setAddSectionBelow(false);

@@ -12,9 +12,8 @@
 .home__box--addMember {
 	display: flex;
 	align-items: center;
-	margin-bottom: 6px;
 	cursor: pointer;
-	
+	margin-bottom: 6px;
 }
 
 .home__icon--borderAddMember {

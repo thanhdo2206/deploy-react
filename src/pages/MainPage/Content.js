@@ -47,7 +47,7 @@ export default function Content(props) {
 				</Toolbar>
 			</AppBar>
 
-			{/* <div style={{ marginTop: '56px' }}></div> */}
+			<div style={{ marginTop: '56px' }}></div>
 
 			{/* content */}
 			<Outlet></Outlet>
